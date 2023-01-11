@@ -1,14 +1,17 @@
 <template>
-    <v-card>
-        <h2>Atlas-Expo</h2>
-        <div>
+    <v-card class="md-h5 font-weight-bold" align="center">
+        
+        <div >
+            <h2>Atlas-Expo</h2>
             <v-btn v-for="(s, i) in sm" :key="i" icon>
-                <v-icon >
+                <v-icon size="30">
                     {{ s.icon }}
                 </v-icon>
             </v-btn>
         </div>
-        <v-card-text></v-card-text>
+        <v-card-text >
+            &copy; {{ new Date().getFullYear() }}
+        </v-card-text>
     </v-card>
 </template>
 

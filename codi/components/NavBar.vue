@@ -1,11 +1,6 @@
 <template>
     <div>
-            <h1>Je suis la barre de menu</h1>
-            <v-app-bar
-                    :clipped-left="clipped"
-                    fixed
-                    app
-            >
+            <v-app-bar app>
             <v-toolbar-title>
                 Atlas-Expo
             </v-toolbar-title>
@@ -16,7 +11,10 @@
             <v-btn icon>
                 <v-icon>mdi-account-box-outline</v-icon>
             </v-btn>
-
+            <v-divider vertical></v-divider>
+            <v-btn icon>
+                <v-icon>mdi-cog-outline </v-icon>
+            </v-btn>
             </v-app-bar>
     </div>
 </template>
